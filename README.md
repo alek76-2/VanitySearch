@@ -1,7 +1,7 @@
 # VanitySearch
 Forked from https://github.com/JeanLucPons/VanitySearch 
 
-This experimental project.
+This experimental project. Increased speed, removed unnecessary functions.
 
 # Usage for 32 BTC Puzzle 
 
@@ -24,16 +24,16 @@ Run programm used CPU
 ./VanitySearch -stop -t 2 -bits 66 -r 50 -level 4 13zb1hQbWVsc2S7ZTZnP2G4undNNpdh5so 
 
 ----------------------------------------------------------------------------------------------------------------
-Check Bits: 28
-Compressed Address: 12jbtzBb54r97TCwW3G1gCFoumpckRAPdY
-Address hash160: 1306b9e4ff56513a476841bac7ba48d69516b1da
-Secret wif: 2SaK6n3GY7WKrHRSyvhrn1k6zdzeAMmNBXH5PtXqoEYscExVUKsh2G
-Secret hex: 0xd916ce8
-pk: 03e9e661838a96a65331637e2a3e948dc0756e5009e7cb5c36664d9b72dd18c0a7
+Check Bits: 28 \
+Compressed Address: 12jbtzBb54r97TCwW3G1gCFoumpckRAPdY \
+Address hash160: 1306b9e4ff56513a476841bac7ba48d69516b1da \
+Secret wif: 2SaK6n3GY7WKrHRSyvhrn1k6zdzeAMmNBXH5PtXqoEYscExVUKsh2G \
+Secret hex: 0xd916ce8 \
+pk: 03e9e661838a96a65331637e2a3e948dc0756e5009e7cb5c36664d9b72dd18c0a7 \
 
-./VanitySearch -stop -t 2 -bits 28 -r 5 12jbtzBb54r97TCwW3G1gCFoumpckRAPdY
+./VanitySearch -stop -t 2 -bits 28 -r 5 12jbtzBb54r97TCwW3G1gCFoumpckRAPdY \
 
-./VanitySearch -stop -t 0 -gpu -bits 28 -r 50000 12jbtzBb54r97TCwW3G1gCFoumpckRAPdY
+./VanitySearch -stop -t 0 -gpu -bits 28 -r 50000 12jbtzBb54r97TCwW3G1gCFoumpckRAPdY \
 
 ----------------------------------------------------------------------------------------------------------------
 
@@ -62,16 +62,16 @@ perl Configure VC-WIN64A --prefix=C:\Build-OpenSSL-VC-64 \
 ms\do_win64a \
 nmake -f ms\ntdll.mak \
 nmake -f ms\ntdll.mak install \
-nmake -f ms\ntdll.mak test \
+nmake -f ms\ntdll.mak test 
 
 Build OpenSSL complete. \
 Connecting libraries to a project in Visual Studio 2017 Community. \
 It's very simple! \
-Go to Solution Explorer - Project Properties and select: \
+Go to Solution Explorer - Project Properties and select: 
 1. Select C/C++ next: \
 C/C++ - General - Additional directories for included files - Edit - Create a line and specify the path: \
 C:\Build-OpenSSL-VC-64\include \
-OK \
+OK 
 2. Select Linker next: \
 Linker - Input - Additional dependencies - Edit and specify the path: \
 c:\Build-OpenSSL-VC-64\lib\ssleay32.lib \
