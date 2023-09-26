@@ -8,6 +8,7 @@ VanitySearchCUDA8.VC.opendb
 VanitySearchCUDA8.sdf
 vc140.pdb
 x64/
+bin/
 obj/
 .idea/
 CMakeLists.txt
