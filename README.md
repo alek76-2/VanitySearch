@@ -59,7 +59,7 @@ Download the library from the official website openssl-1.0.1a.tar.gz \
 http://www.openssl.org/source/old/1.0.1/openssl-1.0.1a.tar.gz \
 Unpack openssl-1.0.1a.tar.gz into the openssl-1.0.1a directory and copy its contents to the directory: \
 c:\openssl-src-64 \
-Run Command Prompt Visual Studio - x64 Native Tools Command Prompt for VS 2017 \
+Run Command Prompt Visual Studio - x64 Native Tools Command Prompt for VS 2017 as administrator \
 Run commands: \
 cd C:\openssl-src-64 \
 perl Configure VC-WIN64A --prefix=C:\Build-OpenSSL-VC-64 \
