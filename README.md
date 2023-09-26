@@ -25,8 +25,10 @@ Run programm used CPU
 
 ----------------------------------------------------------------------------------------------------------------
 Check Bits: 28 \
-Compressed Address: 12jbtzBb54r97TCwW3G1gCFoumpckRAPdY \
-Address hash160: 1306b9e4ff56513a476841bac7ba48d69516b1da \
+Compressed Address: \
+12jbtzBb54r97TCwW3G1gCFoumpckRAPdY \
+Address hash160: \
+1306b9e4ff56513a476841bac7ba48d69516b1da \
 Secret wif: 2SaK6n3GY7WKrHRSyvhrn1k6zdzeAMmNBXH5PtXqoEYscExVUKsh2G \
 Secret hex: \
 0xd916ce8 \
