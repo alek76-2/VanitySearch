@@ -28,12 +28,14 @@ Check Bits: 28 \
 Compressed Address: 12jbtzBb54r97TCwW3G1gCFoumpckRAPdY \
 Address hash160: 1306b9e4ff56513a476841bac7ba48d69516b1da \
 Secret wif: 2SaK6n3GY7WKrHRSyvhrn1k6zdzeAMmNBXH5PtXqoEYscExVUKsh2G \
-Secret hex: 0xd916ce8 \
-pk: 03e9e661838a96a65331637e2a3e948dc0756e5009e7cb5c36664d9b72dd18c0a7 \
+Secret hex: \
+0xd916ce8 \
+pk: \
+03e9e661838a96a65331637e2a3e948dc0756e5009e7cb5c36664d9b72dd18c0a7 
 
-./VanitySearch -stop -t 2 -bits 28 -r 5 12jbtzBb54r97TCwW3G1gCFoumpckRAPdY \
+./VanitySearch -stop -t 2 -bits 28 -r 5 12jbtzBb54r97TCwW3G1gCFoumpckRAPdY 
 
-./VanitySearch -stop -t 0 -gpu -bits 28 -r 50000 12jbtzBb54r97TCwW3G1gCFoumpckRAPdY \
+./VanitySearch -stop -t 0 -gpu -bits 28 -r 50000 12jbtzBb54r97TCwW3G1gCFoumpckRAPdY 
 
 ----------------------------------------------------------------------------------------------------------------
 
