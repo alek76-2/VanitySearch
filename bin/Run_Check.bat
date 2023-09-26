@@ -1,0 +1,3 @@
+VanitySearch.exe -check
+
+pause
