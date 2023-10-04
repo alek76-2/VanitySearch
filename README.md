@@ -49,6 +49,8 @@ Intall CUDA SDK and build OpenSSL, open VanitySearch.sln in Visual C++ 2017. \
 You may need to reset your *Windows SDK version* in project properties. \
 In Build->Configuration Manager, select the *Release* configuration. \
 Build OpenSSL: \
+Install Perl x64 from https://strawberryperl.com \
+Link: https://strawberryperl.com/download/5.32.1.1/strawberry-perl-5.32.1.1-64bit.msi \
 Install Netwide Assembler (NASM).  \
 Download NASM x64 https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/win64/nasm-2.16.01-installer-x64.exe \
 Add Path C:\Program Files\NASM\; \
