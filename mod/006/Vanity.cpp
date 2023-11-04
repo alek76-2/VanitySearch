@@ -1499,7 +1499,7 @@ void VanitySearch::getCPUStartingKey(int thId, Int& key, Point& startP) {
   startP = secp->ComputePublicKey(&km);
   if(startPubKeySpecified)
    startP = secp->AddDirect(startP,startPubKey);
-
+  delete [] SeedKeys;
 }
 
 
@@ -1825,7 +1825,7 @@ void VanitySearch::getGPUStartingKeys(int thId, int groupSize, int nbThread, Int
     if (startPubKeySpecified)
       p[i] = secp->AddDirect(p[i], startPubKey);
   }
-
+  delete [] SeedKeys;
 }
 
 // ----------------------------------------------------------------------------
