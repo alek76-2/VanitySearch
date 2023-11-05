@@ -120,6 +120,8 @@ private:
   int Random_bits;
   int FunctionLevel;
   bool keys_seed_fl;
+  std::string Seed;
+  std::string seed_output;
   //
   Point startPubKey;
   bool startPubKeySpecified;
