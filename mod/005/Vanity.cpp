@@ -406,6 +406,7 @@ VanitySearch::VanitySearch(Secp256K1 *secp, vector<std::string> &inputPrefixes, 
 	  // from Seed
 	  getKeysFromRandomSeed(BitL, BitU, true, 1, Sk);
 	  startKey.Set(&Sk[0]);
+	  printf("[i] startKey.Set() from Seed: %s \n", Seed.c_str());
 	  //
   }
   delete [] Sk;
