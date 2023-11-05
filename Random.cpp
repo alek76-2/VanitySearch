@@ -25,6 +25,7 @@
 #include <openssl/pem.h>
 #include <openssl/ripemd.h>
 //
+#include <cstring>
 
 #define  RK_STATE_LEN 624
 
