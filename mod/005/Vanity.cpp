@@ -69,6 +69,7 @@ VanitySearch::VanitySearch(Secp256K1 *secp, vector<std::string> &inputPrefixes, 
 	this->startPubKeySpecified = !startPubKey.isZero();
 	this->Random_bits = Random_bit;
 	this->FunctionLevel = FuncLevel;
+	this->Seed = seed;
 
 	//
 	bool all_algorithms_fl = false;// = true;
@@ -797,6 +798,9 @@ void VanitySearch::output(string addr,string pAddr,string pAddrHex) {
   if(!needToClose)
     printf("\n");
 
+  // save seed 
+  fprintf(f, "Seed: %s\n", seed_output.c_str());
+  
   fprintf(f, "PubAddress: %s\n", addr.c_str());
 
   if (startPubKeySpecified) {
@@ -2126,9 +2130,27 @@ void VanitySearch::getKeysFromRandomSeed(int nbitL, int nbitU, bool master, int 
 	
 	for (int i = 0; i < nbThread; i++) {
 		
-		newSeed:
+		//newSeed:
 		
-		string seed = Timer::getSeed(32);// Used the random seed ???
+		//string seed = Timer::getSeed(32);// Used the random seed ???
+
+		string seed;
+		
+		// argv Seed
+		if (Seed.length() == 0) {
+			// Default seed
+			seed = Timer::getSeed(32);// random seed
+		} else {
+			seed = Seed;// -s seed
+		}
+		
+		// Fix seed
+		//seed = "4AA177287B28F1B601653CDF44B2B45E6CFD06E10F027C03AC84E53828974E3F";
+		
+		printf("\n[i] Seed: %s \n", seed.c_str());
+		
+		// copy seed
+		seed_output = seed;
 		
 		// test seed
 		//seed = "bla bla bla";// Mnemonic code words
@@ -2202,8 +2224,8 @@ void VanitySearch::getKeysFromRandomSeed(int nbitL, int nbitU, bool master, int 
 		}
 		
 		// Check length 
-		int len = sKey.GetBitLength();		
-		if (len < nbitL) goto newSeed;
+		//int len = sKey.GetBitLength();		
+		//if (len < nbitL) goto newSeed;
 		
 		keys[i].Set(&sKey);// Set Keys 
 		
