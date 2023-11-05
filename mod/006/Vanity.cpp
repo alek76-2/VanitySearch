@@ -397,6 +397,19 @@ VanitySearch::VanitySearch(Secp256K1 *secp, vector<std::string> &inputPrefixes, 
   
   //Set startKey from start_key  
   startKey.Rand(Random_bits);// bits 66
+
+  //Set startKey from Seed
+  int BitL = Random_bits - 1;
+  int BitU = Random_bits;
+  Int *Sk = new Int[1];
+  if (Seed.length() > 0) {
+	  // from Seed
+	  getKeysFromRandomSeed(BitL, BitU, true, 1, Sk);
+	  startKey.Set(&Sk[0]);
+	  //
+  }
+  delete [] Sk;
+  //
   
   if (start_key.length() > 1) { //if (1) {
 	  if (start_key.length() != 64) {
