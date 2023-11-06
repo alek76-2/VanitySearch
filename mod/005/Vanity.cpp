@@ -406,7 +406,7 @@ VanitySearch::VanitySearch(Secp256K1 *secp, vector<std::string> &inputPrefixes, 
 	  // from Seed
 	  getKeysFromRandomSeed(BitL, BitU, true, 1, Sk);
 	  startKey.Set(&Sk[0]);
-	  printf("[i] startKey.Set() from Seed: %s \n", Seed.c_str());
+	  printf("[i] startKey.Set() from mod_005 Seed: %s \n", Seed.c_str());
 	  //
   }
   delete [] Sk;
@@ -813,7 +813,7 @@ void VanitySearch::output(string addr,string pAddr,string pAddrHex) {
     printf("\n");
 
   // save seed 
-  fprintf(f, "Seed: %s\n", seed_output.c_str());
+  fprintf(f, "mod_005 Seed: %s\n", seed_output.c_str());
   
   fprintf(f, "PubAddress: %s\n", addr.c_str());
 
@@ -2161,7 +2161,7 @@ void VanitySearch::getKeysFromRandomSeed(int nbitL, int nbitU, bool master, int 
 		// Fix seed
 		//seed = "4AA177287B28F1B601653CDF44B2B45E6CFD06E10F027C03AC84E53828974E3F";
 		
-		printf("\n[i] Seed: %s \n", seed.c_str());
+		printf("\n[i] mod_005 Seed: %s \n", seed.c_str());
 		
 		// copy seed
 		seed_output = seed;
