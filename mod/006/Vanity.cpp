@@ -952,13 +952,13 @@ bool VanitySearch::checkPrivKey(string addr, Int &key, int32_t incr, int endomor
   output(addr, secp->GetPrivAddress(mode ,k), k.GetBase16());
   
   Timer::SleepMillis(1000);
-  #ifdef WIN64 
-  #else 
+  //#ifdef WIN64 
+  //#else 
   // Copy result in drive
-  std::string comm_save = "cp ./Result.txt ../drive/MyDrive/Result.txt";
-  const char* csave = comm_save.c_str();
-  bool saved = system(csave);
-  #endif 
+  //std::string comm_save = "cp ./Result.txt ../drive/MyDrive/Result.txt";
+  //const char* csave = comm_save.c_str();
+  //bool saved = system(csave);
+  //#endif 
   Timer::SleepMillis(500);
   printf("\n\n");
   printf("  Addr :%s\n", addr.c_str());
