@@ -35,6 +35,7 @@
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Vanity.h" />
     <ClInclude Include="Wildcard.h" />
+    <ClInclude Include="Wordlist_en.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base58.cpp" />
