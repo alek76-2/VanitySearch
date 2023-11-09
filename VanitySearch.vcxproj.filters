@@ -49,6 +49,7 @@
     <ClInclude Include="GPU\GPUWildcard.h">
       <Filter>GPU</Filter>
     </ClInclude>
+    <ClInclude Include="Wordlist_en.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GPU\GPUGenerate.cpp">
