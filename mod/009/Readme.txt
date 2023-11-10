@@ -12,7 +12,6 @@ Launch options check:
 VanitySearch.exe -stop -t 1 -brainwallet 3 -s "bla bla bla" 165i1knU3ang5mEBHikiz8PmXF5svyU5pg 
 VanitySearch.exe -stop -t 1 -r 10 -brainwallet 3 -s "bla bla bla" -u 177HfVC1dWE9wXaT4kC4g4zFBCystRa9ki 
 VanitySearch.exe -stop -bip39 12 -t 1 -bits 28 -r 1 12jbtzBb54r97TCwW3G1gCFoumpckRAPdY 
-VanitySearch.exe -stop -t 1 -bits 28 -s "fruit subway bachelor series apart gauge about chuckle develop obey play animal" 12jbtzBb54r97TCwW3G1gCFoumpckRAPdY 
 --//--
 The code can be rewritten ;-)
 
