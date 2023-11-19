@@ -2571,7 +2571,7 @@ void VanitySearch::drvKey(std::string &InData, std::string &InKey, std::string &
 	
 	// Set depth
 	depth = "";
-	char dep[1];
+	char dep[8];//char dep[1];
 	sprintf(dep, "%02x", depth_ind);
 	depth.append(dep);
 	
@@ -2648,7 +2648,7 @@ void VanitySearch::drvKey(std::string &InData, std::string &InKey, std::string &
 	
 	if (verbose_fl >= 4) { 
 		int len = (int)extended_private_key.length();
-		printf("\n[i] BIP32 Extended Private Key index: %lu Serialized: \n%s Length: %d \n", key_ind, extended_private_key_base58.c_str(), len); 
+		printf("\n[i] BIP32 Extended Private Key index: %u Serialized: \n%s Length: %d \n", key_ind, extended_private_key_base58.c_str(), len); 
 	}
 	
 	// memory leak ?
