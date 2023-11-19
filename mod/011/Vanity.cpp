@@ -2409,7 +2409,7 @@ void VanitySearch::drvKey(std::string &InData, std::string &InKey, std::string &
 	string in_data = "";
 	// Set index
 	if (Hardened_Child_flag) {
-		in_data = outMaster + index_str;
+		in_data = "00" + outMaster + index_str;// in_data = outMaster + index_str;
 	} else {
 		in_data = pubkey + index_str;
 	}	
@@ -2536,7 +2536,7 @@ void VanitySearch::drvKey(std::string &InData, std::string &InKey, std::string &
 	//printf("\n[i] Parrent Pub key:  %s ", pubkey.c_str());
 	//printf("\n[i] Parrent address: %s \n", parrent_addr.c_str());
 	
-	//if (1) {
+	if (Extended_flag) {// test extended ?
 	
 	// Public key
 	Point child_Point;
@@ -2550,8 +2550,10 @@ void VanitySearch::drvKey(std::string &InData, std::string &InKey, std::string &
 	
 	//printf("\n[i] Child Pub key: %s ", child_pub_key.c_str());
 	//printf("\n[i] Child address: %s \n", child_addr.c_str());	
+
+	pubkey = child_pub_key;// Use as extended
 	
-	//}
+	}
 	
 	// BIP32 Extended Private Key Serialize: 
 	// Places “xprv” 0488ade4 or “xpub” 0488b21e at the start. 
@@ -2731,6 +2733,7 @@ void VanitySearch::getKeysFromRandomSeedPRNG(int thId, int nbitU, bool word_fl, 
 	uint32_t keyIndex = 0;
 	uint8_t depth_index_u8 = 0;
 	Hardened_Child_flag = false;
+	Extended_flag = false;
 	
 	// Master key generation HMAC-SHA512
 	drvKey(seed, salt, masterSecretKey, masterChainKey, true, keyIndex, depth_index_u8, extended_key, mIL, mIR, pubKey);
