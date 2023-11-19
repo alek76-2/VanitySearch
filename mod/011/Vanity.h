@@ -124,6 +124,7 @@ private:
   int verbose_fl;
   void drvKey(std::string &InData, std::string &InKey, std::string &outMaster, std::string &outChain, bool master_key_fl, uint32_t key_ind, uint8_t depth_ind, std::string &extended_key, Int &outIL, Int &outIR, std::string &pubkey);
   bool Hardened_Child_flag;
+  bool Extended_flag;
   //
 
   Secp256K1 *secp;
