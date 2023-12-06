@@ -1184,8 +1184,8 @@ void *_FindKeyGPU(void *lpParam) {
 void VanitySearch::checkAddresses(bool compressed, Int key, int i, Point p1) {
 
   unsigned char h0[20];
-  Point pte1[1];
-  Point pte2[1];
+  //Point pte1[1];
+  //Point pte2[1];
 
   // Point
   secp->GetHash160(searchType,compressed, p1, h0);
