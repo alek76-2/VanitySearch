@@ -54,6 +54,7 @@ Link: https://strawberryperl.com/download/5.32.1.1/strawberry-perl-5.32.1.1-64bi
 Install Netwide Assembler (NASM).  \
 Download NASM x64 https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/win64/nasm-2.16.01-installer-x64.exe \
 Add Path C:\Program Files\NASM\; \
+Add Path C:\Strawberry\perl\bin\; \
 Add PATHEXT .PL; before .BAT; \
 those. - .COM;.EXE;.PL;.BAT; \
 And be sure to restart your PC. \
